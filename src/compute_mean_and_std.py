@@ -4,7 +4,6 @@ import pandas as pd
 from itertools import product
 
 
-
 def compute_rowwise_statistics(file_list):
     """Compute row-wise mean and variance across multiple files."""
     dataframes = [pd.read_csv(file) for file in file_list]
